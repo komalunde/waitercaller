@@ -20,7 +20,7 @@
                 </tr>
                 {% for table in tables %}
                     <form cdlass="form-inline" action="./account/deletetable">
-                    {% if table.url %}
+                    {% if table.url is none %}
                     <tr>
                         <td>{{ table.number }}</td>
                         <td>{{ table.url }}</td>
